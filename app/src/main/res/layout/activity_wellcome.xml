@@ -24,7 +24,7 @@
         android:layout_marginTop="148dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="DNI"
+        android:text=""
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

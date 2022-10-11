@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
-    TextView txtDatos;
+    TextView txtDNI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +19,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public void goWellcome(View view) {
 
-        String dni = "";
+        txtDNI = (TextView) findViewById(R.id.etDNI);
+        String dni = (String) txtDNI.getText().toString();
 
         Intent pageReturned = new Intent(LoginActivity.this, WellActivity.class);
-        pageReturned.putExtra("dni", R.id.etDNI);
+        pageReturned.putExtra("dni", dni);
 
         startActivity(pageReturned);
     }

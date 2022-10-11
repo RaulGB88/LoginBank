@@ -15,12 +15,12 @@ public class WellActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wellcome);
+        recieveData();
     }
 
     public void goHome(View view) {
 
         Intent pageReturned = new Intent(WellActivity.this, MainActivity.class);
-        recieveData();
         startActivity(pageReturned);
     }
 
